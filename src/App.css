@@ -6,6 +6,25 @@
   height: 40vmin;
   pointer-events: none;
 }
+.leaderboard-container {
+  margin: 20px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.leaderboard-table th {
+  background-color: #f2f2f2;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -23,6 +42,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+form{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px
+
+}
 
 .App-link {
   color: #61dafb;
@@ -35,4 +60,109 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* ... Previous styles */
+.start-menu {
+  text-align: center;
+  padding: 20px;
+}
+
+.start-menu h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.start-menu button {
+  padding: 2px 2px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.start-menu button:hover {
+  background-color: #0056b3;
+  margin: 2px;
+}
+.game-area {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  border: 1px solid #000;
+  margin: 20px auto;
+  background-image: url('../public/bg1.png');
+  background-position:center;
+  background-size: cover;
+
+}
+
+.catcher {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 10px;
+  background-color: blue;
+  transition: left 0.2s ease-in-out;
+}
+
+.game-item {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: top 1s linear;
+}
+@media (max-width: 600px) {
+  .game {
+    /* Adjust game styles for smaller screens */
+    padding: 10px;
+  }
+
+  .game-area {
+    /* Adjust game area styles for smaller screens */
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .game-item {
+    /* Adjust game item styles for smaller screens */
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+.message{
+  color:green;
+  font-size: small;
+}
+
+
+.p1 {
+  background-image: url('../public/p1.png');
+}
+
+.p2 {
+  background-image: url('../public/p2.png');
+}
+
+.p3 {
+  background-image: url('../public/p3.png');
+}
+
+.p4 {
+  background-image: url('../public/p4.png');
+}
+
+.e1 {
+  background-image: url('../public/e1.png');
+}
+
+.e2 {
+  background-image: url('../public/e2.png');
 }
